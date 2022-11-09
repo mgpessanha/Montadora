@@ -1,0 +1,48 @@
+<html lang='pt-br'>
+<head>
+    <meta charset='utf-8'>
+    <script src='move.js' defer></script>
+    <style>
+        div#colorida{
+             width: 30vw;
+             height: 30px;
+             background-color: rgb(42, 28, 95);
+        }
+    </style>
+</head>
+<body>
+    <div id='colorida'></div>
+
+    <label for='muda_cor'>Muda Cor</label>
+    <input type='color' id='muda_cor' name='muda_cor' onchange='func_muda_cor()'>
+
+    <br><hr><br>
+
+    <label for='quantidade'>Quantidade</label>
+    <input type='number' id='quantidade' name='quantidade' onchange='quantidade()'>
+    
+    <br>
+
+    <form>
+        <select name="montadoras" id="montadoras" onchange="selecionar()"></select>
+    </form>
+
+    <hr>
+    <br>
+
+        <span id="span"></span>
+
+    <hr>
+    <br>
+
+    <label for="nova_montadora">Nova Montadora</label>
+    <input type="text" name="nova_montadora" id="nova_montadora">
+    <input type="button" value="Nova Montadora" id="nova_montadora" onclick="nova_montadora()">
+
+    <hr>
+    <br>  
+
+    <button onclick="remove_montadora()">Excluir uma Montadora</button>
+
+</body>
+</html>
